@@ -1,6 +1,6 @@
-#  LigamentReHab – Voice-Guided Rehab Exercise Assistant
+#  ReHab Mate – Voice-Guided Rehab Exercise Assistant
 
-LigamentReHab is a voice-assisted Python application designed to help you through a guided routine of physiotherapy exercises — especially helpful for knee ligament injury recovery. The program uses text-to-speech to guide you step-by-step through each exercise in real-time.
+ReHab Mate is a voice-assisted Python application designed to help you through a guided routine of physiotherapy exercises — especially helpful for knee ligament injury recovery. The program uses text-to-speech to guide you step-by-step through each exercise in real-time.
 
 
 🚀 **Features**
@@ -14,7 +14,7 @@ LigamentReHab is a voice-assisted Python application designed to help you throug
 
 
 **Structure of the Program**
-<pre>LigamentReHab/
+<pre>ReHab Mate/
 ├── app.py         # Main execution file – run this to start the exercises
 ├── main.py        # Contains core logic for counting and laps
 └── README.md      # Project documentation
