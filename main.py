@@ -6,27 +6,37 @@ en.setProperty('rate', 150)
 en.say("Let's START")
 en.runAndWait()
 
-num = 4
+num = 2
 
 def laps(num):
+    en.say(f"This exercise contains {num} of Laps")
+    en.runAndWait()
+    time.sleep(1)
     count = 0
-    lap = 0
-    while lap < num:
-        print("Second:", count)
+    lap = num
+    while lap != -1:
+        
+        # print("Second:", count)
         en.say(str(count))
         en.runAndWait()
         count += 1
         if count % 5 == 0: # reset section
-            print("5 seconds have passed!")
-            # en.say("Leg down")
-            lap = lap + 1
-            en.say(f"{lap} lap completed")
+            lap = lap - 1
+            if lap == 0:
+                en.say("Take your Leg Down, Moving towards ")
+                en.runAndWait()
+                break
+            en.say("Take your Leg down")
+            en.runAndWait()
+            
+            print(f"{lap} Laps Remaining")
+            en.say(f"{lap} lap remaining")
             en.runAndWait()
             time.sleep(3)
             count = 0
-            # en.say("Leg Up")
-            # en.runAndWait()    
-        time.sleep(1)
+            en.say("Now Please Take your Leg Up")
+            en.runAndWait()    
+        time.sleep(0.8)
 
 
 def straight_count(num):
